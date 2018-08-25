@@ -28,7 +28,7 @@ class P1Test(unittest.TestCase):
         self.assertSequenceEqual(result, [1, 'b'])
 
     def test_add_gene_key(self):
-        result = add_gene_key({'a': 1})
+        result = add_gene_key({'a': 1, 'gene' : 'cool'})
         self.assertEqual(result, {'a': 1, 'gene': 'cool'})
 
         result = add_gene_key({'gene': 'butt', 'b': False})
